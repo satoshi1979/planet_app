@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('planets', function (Blueprint $table) {
             $table->smallIncrements('id');
             $table->string('name');
-            $table->string('English_name');
+            $table->string('english_name');
             $table->integer('radius');
             $table->integer('weight');
             $table->timestamps();
