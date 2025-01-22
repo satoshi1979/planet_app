@@ -33,8 +33,8 @@
             </tr>
         @endforeach
     </table>
+    <button onclick="location.href='{{ route('planets.create') }}'">新規登録</button>
 
-    <p>新規登録</p>
 </body>
 
 </html>
