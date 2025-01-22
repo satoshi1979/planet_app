@@ -8,11 +8,15 @@ use Illuminate\Http\Request;
 
 class PlanetController extends Controller
 {
-    public function select() {}
 
-    public function insert() {}
-
-    public function update() {}
-
-    public function delete() {}
+    public function index()
+    {
+        $planets = Planet::all();
+        return view('planets.index', ['planets' => $planets]);
+    }
+    public function show($id)
+    {
+        $planet = Planet::find($id);
+        return view('planets.show', ['planet' => $planet]);
+    }
 }
