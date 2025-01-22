@@ -27,7 +27,7 @@
                 <td>{{ $planet->english_name }}</td>
                 <td>{{ $planet->radius }}</td>
                 <td>{{ $planet->weight }}</td>
-                <td>詳細</td>
+                <td><a href="/planets/{{ $planet->id }}">詳細</a></td>
                 <td>編集</td>
                 <td>削除</td>
             </tr>
