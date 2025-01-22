@@ -20,7 +20,7 @@ class DatabaseSeeder extends Seeder
         //     'email' => 'test@example.com',
         // ]);
 
-        // MemoSeeder（シーダークラス）の呼び出し
+  
         if (config('app.env') == 'local') {
             $this->call(PlanetSeeder::class);
         }
